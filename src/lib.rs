@@ -19,9 +19,9 @@
 //! ```
 
 use bevy::{
-    asset::io::{AssetReader, AssetReaderError, AssetSource, PathStream, Reader, VecReader},
     prelude::*,
-    utils::ConditionalSendFuture,
+    asset::io::{AssetReader, AssetReaderError, AssetSource, PathStream, Reader, VecReader},
+    tasks::ConditionalSendFuture,
 };
 use futures::{
     channel::oneshot,
