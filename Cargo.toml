@@ -38,13 +38,9 @@ wasm-bindgen = "0.2"
 
 
 [dependencies.bevy]
-version = "0.16"
+version = "0.17"
 default-features = false
-features = [
-  "bevy_asset",
-  "serialize",
-  "x11",
-]
+features = ["bevy_asset", "serialize", "x11", "zstd_rust"]
 
 
 [dependencies.web-sys]
@@ -67,7 +63,7 @@ tempfile = "3.19"
 tokio = { version = "1.44", features = ["macros", "rt-multi-thread"] }
 
 [dev-dependencies.bevy]
-version = "0.16"
+version = "0.17"
 default-features = false
 features = [
   "bevy_asset",
@@ -78,6 +74,7 @@ features = [
   "png",
   "webgl2",
   "x11",
+  "zstd_rust",
 ]
 
 [profile.dev.package."*"]
