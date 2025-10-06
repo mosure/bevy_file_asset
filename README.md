@@ -37,5 +37,6 @@ fn setup(mut commands: Commands, asset_server: Res<AssetServer>) {
 
 | `bevy_args` | `bevy` |
 | :--         | :--    |
+| `0.3`       | `0.17` |
 | `0.2`       | `0.16` |
 | `0.1`       | `0.15` |
